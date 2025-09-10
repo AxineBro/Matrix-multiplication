@@ -103,7 +103,7 @@ double inputNumber(const string& str, const bool& isInteger, const bool& isPosit
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             continue;
         }
-        if (isPositive && number < 0) {
+        if (isPositive && number <= 0) {
             cout << "ERROR: YOU NEED TO ENTER AN POSITIVE" << endl;
             cout << "Please try again" << endl << endl;
             cin.clear();
